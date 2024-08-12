@@ -52,7 +52,7 @@ const Home = () => {
 
     return (
         <>
-            <main className='flex max-md:flex-col items-center md:justify-center max-md:mt-10 h-screen'>
+            <main id='HomePage' className='flex max-md:flex-col items-center md:justify-center max-md:mt-10 h-screen'>
                 {/* TEXT SECTION */}
                 <div className="sectionLeft w-full md:w-2/5 allCenter">
                     <GradualSpacing

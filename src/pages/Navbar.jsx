@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import Particles from "@/components/magicui/particles";
+import { scrollToPage } from '../myTool';
 
 const Navbar = () => {
 
@@ -23,11 +24,11 @@ const Navbar = () => {
 
   // Navbar items
   const DATA = [
-    { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: Info, label: "About" },
-    { href: "#", icon: Zap, label: "Skills" },
-    { href: "#", icon: FolderOpen, label: "Projects" },
-    { href: "#", icon: Send, label: "Contact" },
+    { id: "HomePage", icon: HomeIcon, label: "Home" },
+    { id: "AboutPage", icon: Info, label: "About" },
+    { id: "SkillsPage", icon: Zap, label: "Skills" },
+    { id: "ProjectsPage", icon: FolderOpen, label: "Projects" },
+    { id: "ContactPage", icon: Send, label: "Contact" },
   ]
 
   return (
@@ -39,15 +40,15 @@ const Navbar = () => {
               <DockIcon key={item.label}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a
-                      href={item.href}
+                    <span
+                      onClick={() => scrollToPage(item.id)}
                       className={cn(
                         buttonVariants({ variant: "ghost", size: "icon" }),
                         "size-12 rounded-full",
                       )}
                     >
                       <item.icon className="size-4" />
-                    </a>
+                    </span>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>{item.label}</p>
@@ -55,7 +56,9 @@ const Navbar = () => {
                 </Tooltip>
               </DockIcon>
             ))}
+
             <Separator orientation="vertical" className="h-full" />
+
             <DockIcon>
               <Tooltip>
                 <TooltipTrigger asChild>
