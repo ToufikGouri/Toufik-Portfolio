@@ -84,7 +84,7 @@ const Navbar = () => {
 
       {/* Background of page */}
       <Particles
-        className="absolute -z-10 inset-0"
+        className="fixed top-0 -z-10 inset-0 pointer-events-none"
         quantity={100}
         ease={80}
         color={isDarkMode ? "#ffffff" : "#000000"}

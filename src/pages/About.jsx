@@ -11,7 +11,7 @@ const About = () => {
     const isDarkMode = useSelector(state => state.isDarkMode)
 
     return (
-        <>
+        <div className="h-screen max-md:mb-20">
             <span id="AboutPage" className="allCenter">
                 <AnimatedShinyText className="inline-flex text-4xl items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
                     <span>About Me</span>
@@ -20,6 +20,7 @@ const About = () => {
             </span>
 
             <section className="flex max-md:flex-col items-center md:justify-center my-10  max-md:mt-10">
+                {/* About Image */}
                 <div className="sectionLeft w-full md:w-2/5 allCenter">
                     <div className='h-[300px] w-[300px] rounded-full bg-no-repeat bg-cover' style={{ backgroundImage: "url(../src/assets/AboutImg.png)" }}></div>
                 </div>
@@ -46,7 +47,7 @@ const About = () => {
                 </div>
             </section>
 
-        </>
+        </div>
     )
 }
 
