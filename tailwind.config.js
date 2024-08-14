@@ -53,6 +53,18 @@ module.exports = {
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
 
+        "shine-pulse": {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
+
 
       },
     },
