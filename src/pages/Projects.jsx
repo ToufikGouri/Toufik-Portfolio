@@ -122,7 +122,7 @@ const Projects = () => {
                 </div>
                 {/* Text */}
                 <p className='text-center text-3xl max-md:mt-6'>
-                    & many more, <br /> view all on <a href="https://github.com/ToufikGouri" target='_blank' className='text-purple-500'>GitHub.</a>
+                    & many more, <br /> view all on <a href="https://github.com/ToufikGouri" target='_blank' className='text-purple-500 hover:text-purple-400'>GitHub.</a>
                 </p>
             </BlurFade> 
 
