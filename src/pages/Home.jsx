@@ -1,4 +1,5 @@
 import React from 'react'
+import MyImg from "../assets/MyImg.jpg"
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import OrbitingCircles from "@/components/magicui/orbiting-circles";
 import WordRotate from '@/components/magicui/word-rotate';
@@ -83,7 +84,7 @@ const Home = () => {
                 <div className="sectionRight CIRCLE w-full md:w-2/5 allCenter">
                     <div className="relative flex h-[350px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
                         {/* Inner Image s*/}
-                        <div className='h-[300px] w-[300px] rounded-full bg-no-repeat bg-cover' style={{ backgroundImage: "url(../src/assets/MyImg.jpg)" }}></div>
+                        <div className='h-[300px] w-[300px] rounded-full bg-no-repeat bg-cover' style={{ backgroundImage: `url(${MyImg})` }}></div>
 
                         {/* Outer Circles (reverse) */}
                         {Icons.map((val, ind) =>

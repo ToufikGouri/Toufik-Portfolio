@@ -1,4 +1,5 @@
 import React from "react"
+import AboutImg from "../assets/AboutImg.png"
 import { useSelector } from "react-redux"
 import { MagicCard } from "@/components/magicui/magic-card"
 import { University } from "lucide-react"
@@ -22,7 +23,7 @@ const About = () => {
             <section className="flex max-md:flex-col items-center md:justify-center my-10  max-md:mt-10">
                 {/* About Image */}
                 <div className="sectionLeft w-full md:w-2/5 allCenter">
-                    <div className='h-[300px] w-[300px] rounded-full bg-no-repeat bg-cover' style={{ backgroundImage: "url(../src/assets/AboutImg.png)" }}></div>
+                    <div className='h-[300px] w-[300px] rounded-full bg-no-repeat bg-cover' style={{ backgroundImage: `url(${AboutImg})` }}></div>
                 </div>
 
                 {/* Text Content */}
