@@ -37,6 +37,7 @@ const Skills = () => {
         <div className="sectionLeft max-md:text-center w-full p-4 md:w-2/5">
           <BlurFade delay={0.25} inView className="text-xl md:text-4xl text-black dark:text-white md:leading-[3rem]">
             {skillsText}
+            <p className='text-sm dark:text-gray-400'>Tip: hover or click on any skill.</p>
           </BlurFade>
         </div>
 

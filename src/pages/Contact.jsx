@@ -49,7 +49,7 @@ const Contact = () => {
                     <div className='Seperator max-md:my-5 md:h-10 mx-10 border border-neutral-600/70 dark:border-neutral-400/70'></div>
                     {/* View Resume */}
                     <a target='_blank'
-                        href='https://drive.google.com/file/d/1TKpL2qvOY9IKg6dHZlf8wok-BrG1WzkD/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1qJ4e6UNH2SUpEPCyroJUM1qkApYiFrQ9/view?usp=sharing'
                         className='md:text-xl allCenter flex-row border border-black/20 dark:border-white/20 p-2 px-4 rounded-lg hover:bg-slate-500/20'>
                         View Resume <File className='size-4 ms-1' />
                     </a>

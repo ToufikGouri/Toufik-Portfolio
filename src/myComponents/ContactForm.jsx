@@ -53,7 +53,7 @@ const ContactForm = () => {
         <>
             <div className='mx-5 w-11/12 sm:w-2/5'>
                 <form onSubmit={(e) => e.preventDefault()} className="FormComponent flex flex-col">
-                    <input required value={name} onChange={(e) => setName(e.target.value)} type="text" className='bg-transparent hover:caret-black w-full my-2 p-2 outline-none border border-black/20 dark:border-white/20 rounded-md' placeholder='Name...' />
+                    <input required value={name} onChange={(e) => setName(e.target.value)} type="text" className='bg-transparent w-full my-2 p-2 outline-none border border-black/20 dark:border-white/20 rounded-md' placeholder='Name...' />
                     <input required value={email} onChange={(e) => setEmail(e.target.value)} type="email" className='bg-transparent w-full my-2 p-2 outline-none border border-black/20 dark:border-white/20 rounded-md' placeholder='Email...' />
                     <textarea required value={message} onChange={(e) => setMessage(e.target.value)} rows={5} className='bg-transparent w-full my-2 p-2 outline-none border border-black/20 dark:border-white/20 rounded-md resize-none' placeholder='Message...' />
                     <button type='submit' onClick={(e) => handleSubmit(e)}

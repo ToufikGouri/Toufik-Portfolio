@@ -5,6 +5,8 @@ import BlurFade from '@/components/magicui/blur-fade'
 import { useSelector } from 'react-redux'
 import Marquee from "@/components/magicui/marquee";
 // --------------Images Import--------------
+import EpicRecipesImg from "../assets/projects/EpicRecipes.png"
+import WeblyImg from "../assets/projects/Webly.png"
 import SocialNotesImg from "../assets/projects/SocialNotes.png"
 import UdixImg from "../assets/projects/Udix.png"
 import SmartMartImg from "../assets/projects/SmartMart.png"
@@ -22,11 +24,27 @@ const Projects = () => {
     // Best 3 projects
     const bestProjects = [
         {
+            name: "EpicRecipes",
+            img: EpicRecipesImg,
+            desc: "A platform for Cooking lovers. Search, select and make your favorite recipes and add your own recipe easily.",
+            url: "https://epicrecipes.vercel.app"
+        },
+        {
+            name: "Webly",
+            img: WeblyImg,
+            desc: "Webly is a modern blog platform integrating Contentful as a headless CMS for seamless content management.",
+            url: "https://webly.vercel.app"
+        },
+        {
             name: "SocialNotes",
             img: SocialNotesImg,
-            desc: "Adding your notes & connecting with world at one place.",
-            url: "https://socialnotes7.netlify.app"
+            desc: "Adding your notes privately & connecting with world through social media at one place easily and securily.",
+            url: "https://socialnote.vercel.app"
         },
+    ]
+
+    // List of all projects
+    const allProjects = [
         {
             name: "Udix",
             img: UdixImg,
@@ -39,10 +57,6 @@ const Projects = () => {
             desc: "The coolest e-commerce wesbite with stunnig effects & features.",
             url: "https://smartmart7.netlify.app"
         },
-    ]
-
-    // List of all projects
-    const allProjects = [
         {
             name: "PlayReact",
             img: PlayReactImg,
@@ -123,6 +137,7 @@ const Projects = () => {
                 {/* Text */}
                 <p className='text-center text-3xl max-md:mt-6'>
                     & many more, <br /> view all on <a href="https://github.com/ToufikGouri" target='_blank' className='text-purple-500 hover:text-purple-400'>GitHub.</a>
+                    <br /> <span className='text-sm dark:text-gray-400'>Tip: click on any project to visit it.</span>
                 </p>
             </BlurFade> 
 
