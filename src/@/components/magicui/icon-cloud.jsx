@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
+import { useSelector } from "react-redux";
 
 export const cloudProps = {
   containerProps: {
@@ -54,7 +55,9 @@ export default function IconCloud({
   iconSlugs
 }) {
   const [data, setData] = useState(null);
-  const { theme } = useTheme();
+  const isDarkMode = useSelector(state => state.isDarkMode)
+  // const { theme } = useTheme();
+  const theme = isDarkMode ? 'dark' : 'light'
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
